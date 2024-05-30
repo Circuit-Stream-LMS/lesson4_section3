@@ -1,10 +1,11 @@
 document.getElementById('fetchButton').addEventListener('click', function() {
-    fetch('http://localhost:3000/getuser')  // URL to your backend endpoint
+    alert("Fetching random user data from backend!")
+    fetch('http://localhost:3000/users')
         .then(response => response.json())
         .then(data => {
-            document.getElementById('userName').textContent = data.name;
+            document.getElementById('userName').textContent = `${data.name.title} ${data.name.first} ${data.name.last}`;
             document.getElementById('userEmail').textContent = data.email;
-            document.getElementById('userLocation').textContent = data.location;
+            document.getElementById('userAge').textContent = data.dob.age;
         })
         .catch(error => console.error('Error fetching data: ', error));
 });
