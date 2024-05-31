@@ -1,4 +1,4 @@
-# Random User API Project
+# Random User API Project 👥
 
 ## Getting Started
 
@@ -41,4 +41,4 @@ Back in your browser, click on the `Get a random user` button. Notice that the u
 
 Modify the `/users` endpoint in `app.js` to make a request to the [Random User API](https://randomuser.me/) and return the response to the frontend.
 
-Good luck!
+Good luck! 🚀
